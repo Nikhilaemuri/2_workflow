@@ -23,8 +23,8 @@ jobs:
   docker:
     uses: Nikhilaemuri/1_workflow/.github/workflows/1workflow.yml@main
     with:
-      image_name: azuret4
-      tag: v1
+      image_name: tasks
+      tag: latest
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
       registry_password: ${{secrets.REGISTRY_PASSWORD}}
