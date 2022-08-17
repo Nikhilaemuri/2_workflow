@@ -23,7 +23,7 @@ jobs:
   docker:
     uses: Nikhilaemuri/1_workflow/.github/workflows/1workflow.yml@main
     with:
-      image_name: tasks
+      image_name: task1
       tag: latest
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
