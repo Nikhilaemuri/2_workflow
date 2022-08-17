@@ -21,7 +21,7 @@ jobs:
         run: echo Hello
 
   docker:
-    uses: Nikhilaemuri/1_workflow/.github/workflows/1_workflow.yml@main
+    uses: Nikhilaemuri/1_workflow/.github/workflows/1workflow.yml@main
     with:
       image_name: azuret4
       tag: v1
