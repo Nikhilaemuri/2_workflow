@@ -1,7 +1,9 @@
    
+
 name: Reusable Workflow user
 
 on:
+  
   push:
     branches: [ "main" ]
   pull_request:
@@ -18,12 +20,13 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello
-        
+
   docker:
-    uses: Nikhilaemuri/1_workflow/.github/workflows/1workflow.yml@main
+    uses: Sridevi-bootlabs/first_workflow/.github/workflows/workflow1.yml@main
     with:
       image_name: task1
       tag: latest
     secrets:
       registry_username: ${{secrets.REGISTRY_USERNAME}}
       registry_password: ${{secrets.REGISTRY_PASSWORD}}
+      
